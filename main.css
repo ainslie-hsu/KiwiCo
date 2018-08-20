@@ -34,7 +34,7 @@ button {
 
 .buttons button {
   color: #25BDBE;
-  float: center;
+  display: inline-block;
   font-family: 'Fun Font';
   font-size: 28px;
   line-height: .8;
@@ -44,14 +44,6 @@ button {
 }
 
 button:hover {
-  background-color: #25BDBE;
-  border: 4px solid #21A8A9;
-  border-radius: 8px !important;
-  box-shadow: 0 0 0 0 transparent;
-  color: white;
-  display: inline-block;
-  padding: 2px 8px;
-  text-align: center;
   -webkit-animation-name: waggle;
   animation-name: waggle;
   -webkit-animation-duration: 3s;
@@ -80,13 +72,6 @@ button:hover {
   background-position: 0 5px;
 }
 
-#convenient:hover #sprite-convenient {
-  width: 49px;
-  height: 35px;
-  object-fit: cover;
-  background-position: 0 95.5px;
-}
-
 #creativity {
   -ms-transform: rotate(-1deg); /* IE 9 */
   -webkit-transform: rotate(-1deg); /* Safari 3-8 */
@@ -98,13 +83,6 @@ button:hover {
   height: 33px;
   object-fit: cover;
   background-position: -50px 0;
-}
-
-#creativity:hover #sprite-creativity {
-  width: 35px;
-  height: 33px;
-  object-fit: cover;
-  background-position: -50px 90px;
 }
 
 #educational {
@@ -120,13 +98,6 @@ button:hover {
   background-position: -85px 3px;
 }
 
-#educational:hover #sprite-educational {
-  width: 38px;
-  height: 33px;
-  object-fit: cover;
-  background-position: -85px 93.5px;
-}
-
 #family {
   -ms-transform: rotate(-1deg); /* IE 9 */
   -webkit-transform: rotate(-1deg); /* Safari 3-8 */
@@ -138,13 +109,6 @@ button:hover {
   height: 32px;
   object-fit: cover;
   background-position: -125px 1px;
-}
-
-#family:hover #sprite-family {
-  width: 48px;
-  height: 32px;
-  object-fit: cover;
-  background-position: -125px 91.5px;
 }
 
 #fun {
@@ -162,15 +126,6 @@ button:hover {
   margin-right: 12px;
 }
 
-#fun:hover #sprite-fun {
-  width: 26px;
-  height: 32px;
-  object-fit: cover;
-  background-position: -224px 91.5px;
-  margin-left: 12px;
-  margin-right: 12px;
-}
-
 #alternative {
   -ms-transform: rotate(1deg); /* IE 9 */
   -webkit-transform: rotate(1deg); /* Safari 3-8 */
@@ -182,13 +137,6 @@ button:hover {
   height: 30px;
   object-fit: cover;
   background-position: -176px 0;
-}
-
-#alternative:hover #sprite-alternative {
-  width: 45px;
-  height: 30px;
-  object-fit: cover;
-  background-position: -176px 91px;
 }
 
 .highlight {
@@ -274,4 +222,152 @@ button:hover {
   margin: auto;
   object-fit: cover !important;
   background-position: -85px 93.5px !important;
+}
+
+@media screen and (max-width: 960px) {
+
+}
+
+@media screen and (max-width: 480px) {
+  #why-kiwico h2 {
+    font-size: 30px !important;
+    margin: 0 10% 5%;
+  }
+
+  .buttons button {
+    font-size: 18px;
+    margin: 1%;
+  }
+
+  button:hover {
+    background-color: #25BDBE;
+    border: 4px solid #21A8A9;
+    border-radius: 8px !important;
+    box-shadow: 0 0 0 0 transparent;
+    color: white;
+    display: inline-block;
+    padding: 2px 8px;
+    text-align: center;
+    -webkit-animation-name: waggle;
+    animation-name: waggle;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    -webkit-transition: left .2s;
+    transition: left .2s;
+  }
+
+  #convenient:hover #sprite-convenient {
+    width: 49px;
+    height: 35px;
+    object-fit: cover;
+    background-position: 0 95.5px;
+  }
+
+  #creativity:hover #sprite-creativity {
+    width: 35px;
+    height: 33px;
+    object-fit: cover;
+    background-position: -50px 90px;
+  }
+
+  #educational:hover #sprite-educational {
+    width: 38px;
+    height: 33px;
+    object-fit: cover;
+    background-position: -85px 93.5px;
+  }
+
+  #family:hover #sprite-family {
+    width: 48px;
+    height: 32px;
+    object-fit: cover;
+    background-position: -125px 91.5px;
+  }
+
+  #fun:hover #sprite-fun {
+    width: 26px;
+    height: 32px;
+    object-fit: cover;
+    background-position: -224px 91.5px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  #alternative:hover #sprite-alternative {
+    width: 45px;
+    height: 30px;
+    object-fit: cover;
+    background-position: -176px 91px;
+  }
+
+  .highlight {
+    border-radius: 20px;
+    font-size: 20px !important;
+    margin: auto;
+    margin-top: 10%;
+    position: relative;
+    text-align: center;
+    width: 90%;
+  }
+
+  .highlight:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: white;
+    border-top: 0;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+
+  .text-convenient {
+    margin: auto;
+    padding: 5% 10%;
+  }
+
+  .text-educational {
+    margin: auto;
+    padding: 5% 13.5%;
+  }
+
+  img {
+    display: none !important;
+  }
+
+  .text-customer {
+    display: none;
+  }
+
+  .load-button {
+    background-color: #25BDBE;
+    border: 4px solid #21A8A9;
+    border-radius: 8px !important;
+    box-shadow: 0 0 0 0 transparent;
+    color: white !important;
+    display: inline-block;
+    padding: 2px 8px;
+    text-align: center;
+    -webkit-animation-name: waggle;
+    animation-name: waggle;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    -webkit-transition: left .2s;
+    transition: left .2s;
+  }
+
+  .load-button-img {
+    background-image: url(http://icdn.kiwicrate.com/site/home/why-kiwico-sprite.png);
+    background-size: 250px;
+    margin: auto;
+    width: 49px;
+    height: 35px;
+    object-fit: cover;
+    background-position: 0 95.5px !important;
+  }
 }

@@ -31,16 +31,35 @@ var educationalBlurb = function() {
 };
 
 $(document).ready(function() {
-  convenientButton();
-  convenientBlurb();
+  if ($(window).width() < 768) {
+    $('#convenient').addClass('load-button');
+    $('#sprite-convenient').addClass('load-button-img');
+    convenientBlurb();
+  } else {
+    convenientButton();
+    convenientBlurb();
+  }
+});
+
+$('.buttons').on('click', function() {
+  $('#convenient').removeClass('load-button');
+  $('#sprite-convenient').removeClass('load-button-img');
 });
 
 $('#convenient').on('click', function() {
-  convenientButton();
-  convenientBlurb();
+  if ($(window).width() < 768) {
+    convenientBlurb();
+  } else {
+    convenientButton();
+    convenientBlurb();
+  }
 });
 
 $('#educational').on('click', function() {
-  educationalButton();
-  educationalBlurb();
+  if ($(window).width() < 768) {
+    educationalBlurb();
+  } else {
+    educationalButton();
+    educationalBlurb();
+  }
 });

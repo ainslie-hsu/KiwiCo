@@ -1,0 +1,300 @@
+#sparks-creativity {
+  -ms-transform: rotate(-1deg); /* IE 9 */
+  -webkit-transform: rotate(-1deg); /* Safari 3-8 */
+  transform: rotate(-1deg);
+}
+
+#sparks-creativity img {
+  width: 50px;
+}
+
+#educational {
+  -ms-transform: rotate(1deg); /* IE 9 */
+  -webkit-transform: rotate(1deg); /* Safari 3-8 */
+  transform: rotate(1deg);
+}
+
+#educational img {
+  width: 50px;
+}
+
+#family-time {
+  -ms-transform: rotate(-1deg); /* IE 9 */
+  -webkit-transform: rotate(-1deg); /* Safari 3-8 */
+  transform: rotate(-1deg);
+}
+
+#family-time img {
+  width: 50px;
+}
+
+#fun {
+  -ms-transform: rotate(1deg); /* IE 9 */
+  -webkit-transform: rotate(1deg); /* Safari 3-8 */
+  transform: rotate(1deg);
+}
+
+#fun img {
+  width: 50px;
+}
+
+#alternative-to-screen-time {
+  -ms-transform: rotate(1deg); /* IE 9 */
+  -webkit-transform: rotate(1deg); /* Safari 3-8 */
+  transform: rotate(1deg);
+}
+
+#alternative-to-screen-time img {
+  width: 50px;
+}
+
+<style>
+.no-menu #all-logos {
+margin-top:3px;
+}
+#universal-header {
+min-height:0;
+height:45px;
+}
+#sticky-page-nav {
+position:fixed;
+height:45px;
+top:45px;
+left:0;
+right:0;
+transition:top .4s, margin-top .3s;
+text-align: center;
+background:#efefef;
+font:normal normal 11px/11px 'Museo Sans', Arial, Helvetica, Verdana, sans-serif;
+z-index: 11;
+box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+#sticky-page-nav.stuck {
+top:0;
+}
+#sticky-page-nav ol {
+padding:0;
+}
+#sticky-page-nav li {
+display:inline-block;
+border-left:#ccc solid 1px;
+height: 25px;
+margin: 10px -2px;
+list-style:none;
+}
+#sticky-page-nav a {
+color:#25BDBE;
+font-weight:bold;
+text-decoration:none;
+display:block;
+padding:12px 8px;
+margin-top:-10px;
+transition:background .3s;
+}
+#sticky-page-nav a:hover, #sticky-page-nav a:focus, #sticky-page-nav a:active, #sticky-page-nav .active a {
+background:#fff;
+}
+#sticky-page-nav .btn:hover, #sticky-page-nav .btn:focus, #sticky-page-nav .btn:active, #sticky-page-nav .active .btn {
+background:#FF7400;
+}
+#sticky-page-nav .btn {
+color: #fff;
+margin-top: -5px;
+font-size: inherit;
+line-height: inherit;
+padding: 6px 8px;
+font-weight:bold;
+text-align:left;
+}
+#sticky-page-nav li:first-child, #sticky-page-nav li:last-child {
+border-width:0;
+}
+@media (min-width:480px) {
+#sticky-page-nav a {
+padding:12px 18px;
+}
+}
+@media (min-width:768px) {
+#universal-header {
+height:70px;
+}
+#sticky-page-nav, #sticky-page-nav.stuck {
+top:70px;
+font-size: 13px;
+}
+.no-menu #all-logos {
+margin-top: 15px;
+}
+#sticky-page-nav br {
+display:none;
+}
+#sticky-page-nav li {
+width: 15%;
+vertical-align:middle;
+}
+#sticky-page-nav li:first-child {
+border-left-width: 1px;
+}
+#sticky-page-nav a {
+padding: 18px;
+}
+#sticky-page-nav .btn {
+padding: 11px 12px;
+text-align:center;
+}
+}
+</style>
+
+<style>
+#why-family {
+    background:rgba(37, 189, 190, 0.1);
+    text-align:center;
+    padding:10px 0 40px;
+    position:relative;
+}
+#why-family .subhead {
+    color: #25BDBE;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#why-family .scroll {
+  white-space: nowrap;
+  overflow:auto;
+  margin:0 -10px;
+}
+#why-family ul {
+    margin:0 20px 15px;
+    padding:20px 20px 20px 0;
+    border: dotted 2px rgba(0, 0, 0, .2);
+    border-width: 2px 0;
+}
+#why-family li {
+    line-height: 1.4;
+    font-size: 14px;
+    position: relative;
+    min-height: 165px;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: middle;
+}
+
+#why-family h3 {
+    font-size: 20px;
+    font-family: 'Fun Font';
+    line-height: 1;
+    font-size:28px;
+    text-transform: lowercase;
+    line-height:.8;
+    margin-bottom:0;
+    color: #25BDBE;
+}
+#why-family h3:before {
+    content: "";
+    display: inline-block;
+    background: transparent url(https://icdn.kiwicrate.com/site/home/home-why-icons.png) no-repeat top left;
+    background-size: auto 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+#why-family ul p {
+    font-style: italic;
+}
+#why-family li:before {
+    background: transparent url('https://icdn.kiwicrate.com/site/home/home-why-circles.jpg') no-repeat top left;
+    content:'';
+    height: 161px;
+    width: 161px;
+    display:block;
+    position:absolute;
+    bottom:0;
+    right:50%;
+    margin-right:-80px;
+    background-size:auto 163px;
+    border-radius:50%;
+}
+#why-family .educational h3:before {
+    width: 25px;
+    background-position: 0 0;
+}
+
+#why-family .creative h3:before {
+    width: 24px;
+    background-position: -24px 0;
+}
+
+#why-family .convenient h3:before {
+    width: 37px;
+    background-position: -48px 0;
+}
+
+#why-family .fun h3:before {
+    width: 35px;
+    background-position: -85px 0;
+}
+#why-family .educational:before {
+    background-position:-1px -1px;
+}
+#why-family .creative:before {
+    background-position:-164px -1px;
+}
+#why-family .convenient:before {
+    background-position:-327px -1px;
+}
+#why-family .fun:before {
+    background-position: -491px -1px;
+}
+    #why-family li:nth-child(odd) {
+        padding-top: 170px;
+    }
+    #why-family li:nth-child(even) {
+        padding-bottom: 170px;
+    }
+
+    #why-family li:nth-child(odd):before {
+        top:0;
+    }
+
+
+@media (max-width:767px) {
+  #why-family li {
+    float:none;
+  }
+  #why-family li:last-child:after {
+    content: "";
+    width: 30px;
+    position: absolute;
+    right: -30px;
+    display: block;
+    background: #eaf9f9;
+    top: -40px;
+    bottom: -39px;
+    z-index: 1;
+  }
+#why-family ul {
+    width:900px;
+}
+#why-family:after {
+    display: block;
+    position: absolute;
+    width: 20px;
+    top: 136px;
+    height: 329px;
+    right: 0;
+    content: "";
+    background: -moz-linear-gradient(left, rgba(234,249,249,0) 0%, rgba(131,164,170,0.5) 100%);
+    background: -webkit-linear-gradient(left, rgba(234,249,249,0) 0%,rgba(131,164,170,0.5) 100%);
+    background: linear-gradient(to right, rgba(234,249,249,0) 0%,rgba(131,164,170,0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00eaf9f9', endColorstr='#8083a4aa',GradientType=1 );
+}
+}
+@media (min-width:768px) {
+#why-family ul {
+    overflow:hidden;
+    border-bottom:none;
+    margin:0;
+    padding-right:0;
+}
+}
+</style>
